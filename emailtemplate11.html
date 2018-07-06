@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="%%subject%%">
+        
+        <title>%%subject%%</title>
+  </head>
+  
+<style type="text/css"> 
+	@media screen {
+
+        @font-face {
+
+          font-family: 'Lato';
+
+          font-style: normal;
+
+          font-weight: 400;
+
+          src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+
+        }
+
+ 
+
+        @font-face {
+
+          font-family: 'Lato';
+
+          font-style: normal;
+
+          font-weight: 700;
+
+          src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+
+        }
+
+       
+
+        @font-face {
+
+          font-family: 'Lato';
+
+          font-style: italic;
+
+          font-weight: 400;
+
+          src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+
+        }
+
+       
+
+        @font-face {
+
+          font-family: 'Lato';
+
+          font-style: italic;
+
+          font-weight: 700;
+
+          src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+
+        }
+
+        @font-face {
+          
+          font-family:"bressay";
+          src:url("https://use.typekit.net/af/e25f4c/00000000000000003b9add4c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/e25f4c/00000000000000003b9add4c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/e25f4c/00000000000000003b9add4c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+          font-style:italic;
+          font-weight:400;
+
+      }
+
+      @font-face {
+          
+          font-family:"bressay";
+          src:url("https://use.typekit.net/af/d49593/00000000000000003b9add4d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/d49593/00000000000000003b9add4d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/d49593/00000000000000003b9add4d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+          font-style:normal;
+          font-weight:400;
+
+      }
+
+      @font-face {
+
+          font-family:"bressay";
+          src:url("https://use.typekit.net/af/5954fd/00000000000000003b9add4e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/5954fd/00000000000000003b9add4e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/5954fd/00000000000000003b9add4e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+          font-style:italic;font-weight:700;
+
+      }
+
+      @font-face {
+          
+          font-family:"bressay";
+          src:url("https://use.typekit.net/af/173e5e/00000000000000003b9add4f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/173e5e/00000000000000003b9add4f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/173e5e/00000000000000003b9add4f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+          font-style:normal;font-weight:700;
+          }
+
+    }
+
+
+    
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; }
+
+    /* RESET STYLES */
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    
+    /* MOBILE STYLES */
+    @media screen and (max-width:600px){
+        h1 {
+            font-size: 32px !important;
+            line-height: 32px !important;
+        }
+        
+
+        #charles {
+        	content:url("https://go.cnr.com/l/82322/2018-06-22/544mlv/82322/130797/Charles_Boettcher_Email_Banner_300__1_.jpg") !important;
+        	width: 100% !important;
+
+        }
+
+        #watchVideo {
+              display: block !important;
+              margin: 0 auto !important;
+              margin-top: 10px !important;
+        }
+        
+        #runtime{
+              margin: auto !important;
+              text-align: center !important;
+        }
+
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+  
+</style>  
+  
+  
+<body>
+<!-- MAIN BODY TABLE --><!--[if mso]>
+<style type=”text/css”>
+.fallback-text {
+font-family: Arial, sans-serif;
+}
+</style>
+<![endif]-->
+<table bgcolor="#37424B" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><!-- CENTERED TABLE -- 620px -->
+		<tr>
+			<td valign="bottom" align="center">
+			<table align="center" cellpadding="0" cellspacing="0" style="width:620px" width="620">
+				<tbody>
+					<tr>
+						<td style="width:10px" width="10">&nbsp;</td>
+						<td style="width:600px" width="600">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td height="15">&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td style="width:40px" width="40">&nbsp;</td>
+												<td style="width:520px" width="520">
+												<table cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td pardot-region="preheader_content00" align="center" style="font-size:10px;color:rgb(255,255,254); padding: 20px 0; text-align:center; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;" valign="top">
+					
+
+																<a href="%%view_online%%" style="font-weight: normal; color:rgb(255,255,255); opacity: 0.6;  text-decoration: underline; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank">View in browser</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td style="width:40px" width="40">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td style="width:40px" width="40">&nbsp;</td>
+												<td style="width:520px" width="520">
+												<table cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td pardot-region="preheader_content01" align="center" style="font-size:12px;text-align:center" valign="top"><img alt="CNR Logo" border="0" src="https://go.cnr.com/l/82322/2018-06-27/545wbz/82322/131521/CNR_logo_final.png" style="width: 250px;" title="CNR Logo" width="250"></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td style="width:40px" width="40">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="15">&nbsp;</td>
+								</tr>
+
+								<tr>
+									<td bgcolor="#FFF" align="center" height="0" style="background:#FFF; color: #FFF; border-collapse: collapse; border-style: none; border-radius: .5em .5em 0 0 ;">
+										<table bgcolor="#FFF" style="background-color: #FFF; border-collapse: collapse;" cellpadding="0" cellspacing="0">&nbsp;
+											<tr><!-- MAIN CONTENT AREA -->
+												<td bgcolor="#FFF" style=" color: #FFF; background-color: #FFF; border-style: none;">
+												&nbsp;<table bgcolor="#FFF" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFF">
+													<tbody>
+														<tr height="30" style="height: 5px;"></tr>
+														<tr pardot-repeatable="">
+															<td align="center" style="width:40px" width="40">&nbsp;</td>
+															<td pardot-region="header_content00" align="center" style="line-height: 20px;">
+															<div style="text-align:center">
+															<h4 style="letter-spacing: normal; font-family: 'Lato', 'Calibri', 'Arial', sans-serif; font-size: 13.5px; font-weight: 200; margin: 0; color: rgb(139,150,165); display: block;">Video Commentary | May 7, 2018</h4>
+
+															<h1 style="color: rgb(18,85,157); font-weight: 400; line-height: 26px; margin: 10px 0; letter-spacing: normal; font-family: 'Bressay', 'Garamond'; font-size: 31.5px; font-style: normal; display: block; padding: 0">Market Perspectives</h1>
+
+															<h3 style="color: rgb(55,66,75); letter-spacing: normal; font-family: 'Lato', 'Calibri', 'Arial', sans-serif; margin-bottom: 25px; font-size: 14px; font-weight: 300; display: block;">Watch video commentary, by Charles Boettcher, as he highlights the view of current issues affecting the financial markets in our Market Perspectives.</h3>
+															</div>
+															</td>
+															<td align="center" style="width:40px" width="40">&nbsp;</td>
+													</tr>
+											</tbody>
+											</table>
+											</td>
+											
+										</tr>			
+										</table>
+									</td>						
+								</tr>							
+							</tbody>
+						</table>
+						</td>
+						<td style="width:10px" width="10">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table bgcolor="#e8e8e8" cellpadding="0" cellspacing="0" width="100%">
+				<tbody><!-- CENTERED TABLE -- 620px -->
+					<tr>
+						<td valign="top">
+						<table align="center" cellpadding="0" cellspacing="0" style="background-color: #FFF; width:620px" width="620">
+							<tbody>
+								<tr>
+									<td style="background-color: #e8e8e8; width:10px" width="10">&nbsp;</td>
+									<td pardot-region="body_content00" width="600"><img id="charles" alt="Charles Boettcher" src="https://go.cnr.com/l/82322/2018-06-29/547p7d/82322/131953/Charles_600.jpg" style="display: block; background-color: #FFF;"></td>
+									<td style="width:10px; background-color: #e8e8e8;" width="10">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+					<tr>
+						<td valign="top">
+						<table align="center" cellpadding="0" cellspacing="0" style="width:620px" width="620">
+							<tbody>
+								<tr>
+									<td style="width:10px" width="10">&nbsp;</td>
+									<td style="width:600px" width="600">
+
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr pardot-repeatable="">
+												<td align="left" class="bodyContent" id="cb" pardot-region="body_content01" style="text-align: background-color: #FFF; color: rgb(159,168,176); line-height: 21px; font-family: Helvetica; font-size: 14px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="600">
+												<table border="0" cellpadding="0" cellspacing="0" style="border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(204, 204, 204); background-color: #FFF; border-collapse: collapse !important; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+													<tbody>
+														
+														<tr pardot-repeatable="" class="">
+															<td style="width: 60px;" width="60">&nbsp;</td>
+															<td align="center" class="bodyContent" style="text-align: center; color: rgb(159,168,176); line-height: 21px; font-family: Helvetica; font-size: 14px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="540">
+															
+
+
+															<h2 style="color: #37424B; font-family: 'bressay', 'Garamond'; font-size: 26.31px; font-weight: 400; text-align: center; margin-top: 30px; margin-bottom: 5px;">Charles Boettcher</h2>
+
+															<h4 id="title" style="font-size: 14px; font-family: 'Lato', 'Calibri', 'Helvetica', 'Arial', sans-serif; font-weight: 200; text-align: center; margin-top: 10px; color: #37424B; margin-bottom: 20px;">Managing Director, Senior Portfolio Manager</h4>
+															
+
+
+
+										                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+										                    <tr>
+
+										                      <td align="center">
+
+										                        <table border="0" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse;">
+
+										                          <tr>
+
+										                              <td align="center" style="border: 1px solid #FFFFFF; text-align: center;" height="40" width="110" bgcolor="#1462C7"><a href="https://www.youtube.com/watch?v=427dNlhkoF8" target="_blank" style="text-align: center; font-size: 10px; font-family: 'Lato', 'Calibri', 'Helvetica', 'Arial', sans-serif; text-decoration: none; color: #ffffff; letter-spacing: 1.5px; border: 1px solid #1462C7; display: inline-block;">WATCH VIDEO</a></td>
+										                              <td align="center" style="border: 1px solid #FFFFFF;" height="40" width="40" bgcolor="#1462C7"><a href="https://www.youtube.com/watch?v=427dNlhkoF8" target="_blank" style="font-size: 10px; font-family: 'Lato', 'Calibri', 'Helvetica', 'Arial', sans-serif; 	letter-spacing: 0.9px; text-decoration: none; color: #ffffff;  border: 1px solid #1462C7; display: inline-block;">&#9658;</a></td>
+
+										                          </tr>
+
+										                        </table>
+
+										                      </td>
+
+										                    </tr>
+
+										                  </table>
+
+
+
+															</td>
+															<td style="width: 60px;" width="60">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr><!-- MAIN CONTENT AREA -->
+												<td bgcolor="#FFFFFF">&nbsp;
+												<table cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr height="10">
+														</tr>
+														<tr>
+															<td align="center" style="width:60px" width="60">&nbsp;</td>
+															<td align="left">
+															<table border="0" cellpadding="0" cellspacing="0" id="m_-2851975748402628393templateColumns">
+																<tbody>
+																	<tr pardot-repeatable="" class="">
+																		<td align="left" class="bodyContent" id="time" pardot-region="body_content02" style=" text-align: left; color: rgb(55,66,75); font-family: Helvetica; font-size: 14px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top">
+																		<h2 style="line-height: 32px; margin: 0px; text-align: left; color: rgb(55,66,75);letter-spacing: normal; padding-bottom: 10px; font-family: 'Lato', 'Calibri', 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-style: normal; font-weight: 200; display: block;">Here are some of the topics covered in this issue of Economic Perspectives.<br>
+																		
+																		[<a href="" style="color: rgb(55,66,75); text-decoration: none;">00:32</a>] Status on U.S. GDP growth<br>
+																		[<a href="" style="color: rgb(55,66,75); text-decoration: none;">01:13</a>] Price-to-earnings ratios remain somewhat elevated<br>
+																		[<a href="" style="color: rgb(55,66,75); text-decoration: none;">01:41</a>] Geopoltical tensions and inflation scares<br>
+																		[<a href="" style="color: rgb(55,66,75); text-decoration: none;">02:15</a>] Improvements in earnings is underway</h2>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+															<td align="center" style="width:60px" width="60">&nbsp;</td>
+														</tr>
+														<tr>
+															<td align="center" colspan="3" height="5">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" bgcolor="#FFF" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: background-color: #FFF; 0pt;" valign="top"><!-- BEGIN FOOTER // -->
+												<table border="0" cellpadding="0" cellspacing="0" id="templateFooter" style="border-collapse: collapse !important; -ms-text-size-adjust: 100%; background-color: rgb(255, 255, 255); -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+													<tbody>
+														<tr pardot-removable="" class="">
+															<td align="center" class="footerContent" pardot-region="footer_content00" style="padding: 20px; padding-bottom: 0px; text-align: center; color: rgb(128, 128, 128); line-height: 15px; font-family: Helvetica; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" id="templateFooter" style="border-collapse: width: 150px; collapse !important; -ms-text-size-adjust: 100%; background-color: rgb(255, 255, 255); -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="150">
+							<tbody>
+								<tr>
+									<td height="15" align="left" style="color: rgb(128, 128, 128); line-height: 15px; font-family: Helvetica; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top"><a height="15" href="https://www.youtube.com/channel/UCgY_nhfQRbYBkuKYHKuZbSQ" style="margin: 0; padding: 0; color: rgb(96, 96, 96); font-weight: normal; text-decoration: underline; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank"><img alt="Youtube" height="15" src="https://go.cnr.com/l/82322/2018-06-21/542hj6/82322/130605/icon_social_youtube_white_1x.png" style="display: inline; width: 21px; height: 15px;" width="21"></a>&nbsp;&nbsp;&nbsp;</td>
+									<td align="left" style="color: rgb(128, 128, 128); line-height: 15px; font-family: Helvetica; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top"><a height="15" href="https://www.linkedin.com/company/city-national-rochdale" style="margin: 0; padding: 0; color: rgb(96, 96, 96); font-weight: normal; text-decoration: underline; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank"><img alt="Linkedin" height="15" src="https://go.cnr.com/l/82322/2018-06-21/542hj8/82322/130607/icon_social_linkedin_white.png" style="display: inline; width: 16px; height: 15px;" width="16"></a>&nbsp;&nbsp;&nbsp;</td>
+									<td align="left" height="15" style="color: rgb(128, 128, 128); line-height: 15px; font-family: Helvetica; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top"><a href="https://twitter.com/CNRochdale?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="color: rgb(96, 96, 96); margin: 0; padding: 0; font-weight: normal; text-decoration: underline; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank"><img alt="Twitter" height="15" src="https://go.cnr.com/l/82322/2018-06-21/542hj4/82322/130603/icon_social_twitter_white.png" style="display: inline; width: 19px; height: 15px;" width="19"></a>&nbsp;&nbsp;&nbsp;</td>
+									<td align="left" height="15" style="color: rgb(128, 128, 128); line-height: 15px; font-family: Helvetica; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top"><a href="https://www.facebook.com/CityNationalRochdale/" style="margin: 0; padding: 0; color: rgb(96, 96, 96); font-weight: normal; text-decoration: underline; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank"><img alt="Facebook" height="15" src="https://go.cnr.com/l/82322/2018-06-21/5429z6/82322/130533/icon_social_facebook_white.png" style="display: inline; width: 8px; height: 15px;" width="8"></a>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="background-color: #FFF" height="10"></td>
+											</tr>
+										
+
+											<tr align="center" style="background-color: #FFF">
+												<td>
+													<table align="center">
+														<tr>
+															<td height="0" width="480" style="border-bottom: 1px solid #A7AFB3; background-color: #FFF;"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+
+											<tr>
+												<td align="left" class="footerContent bottom" pardot-region="footer_content01" style="padding: 10px 0 0 0; background-color: #FFF; text-align: center; color: rgb(167,175,179); line-height: 14px; font-weight: 400; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top">To ensure the delivery of future emails, please add <a href="mailto:citynationalrochdale@cnr.com" style="color: rgb(20,98,199); font-weight: normal; text-decoration: underline; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">citynationalrochdale@cnr.com</a><br>
+												to your email address book or safe sender list.&nbsp;</td>
+											</tr>
+											<tr>
+												<td align="center" bgcolor="#FFFFFF" height="20" style="border-collapse: collapse; border-radius: 0 0 .5em .5em ;">&nbsp;</td>
+											</tr>
+											<!-- OUTSIDE -->
+											<tr>
+												<td height="20">&nbsp;</td>
+											</tr>
+											<tr>
+												<td align="center" pardot-region="footer_content02" style="color:rgb(167,175,179); line-height: 14px; font-weight: 400; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 11px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px 60px 20px 60px;"><a style="color:rgb(167,175,179); text-decoration: none; border: none; ">Investment management services provided by City National Bank through its wholly-owned subsidiary City National Rochdale, LLC, a registered investment advisor. Non-deposit investment products are not FDIC insured, are not bank guaranteed, and may lose value.</a>
+												</td>
+											</tr>
+											<tr align="center" style="background-color: #e8e8e8">
+												<td>
+													<table align="center">
+														<tr>
+															<td height="0" width="480" style="border-bottom: 1px solid #A7AFB3; background-color: #e8e8e8;"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											
+											<tr>
+												<td align="center" pardot-region="footer_content01" style="color:rgb(167,175,181); line-height: 14px; font-weight: 400; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 60px 30px 60px;">
+												
+												<a href="%%unsubscribe%%" target="_blank" style="color:rgb(167,175,180); font-weight: 500;"><span style="color:rgb(167,175,179); font-weight: 500;">Unsubscribe from this list</span></a> <span style="font-weight: 500; color:rgb(167,175,179);">&nbsp;| &nbsp;</span> <a href="https://go.cnr.com/email-preference-center" target="_blank" style="color:rgb(167,175,179); font-weight: 500;"><span style="color:rgb(167,175,179); font-weight: 500;">Update subscription preferences </span></a> <span style="font-weight: 500; color:rgb(167,175,179);">&nbsp;| &nbsp;</span> <a href="%%addthis_url_email%%" target="_blank" style="color:rgb(167,175,179); font-weight: 500;"> <span style="color:#A7AFB3; font-weight: 500;">Forward Email</span></a> <span style="color:rgb(167,175,179); font-weight: 500;"> &nbsp;| &nbsp;<a href="https://www.cnr.com/content/dam/cnrcom/disclosures/cnr_privacy_notice_18882e.pdf" target="_blank" style="color:rgb(167,175,179); font-weight: 500;">Privacy Policy</a> &nbsp;| <a href="https://www.cnr.com/content/dam/cnrcom/disclosures/terms_and_conditions.pdf" target="_blank" style="color:rgb(167,175,179); font-weight: 500;">Terms</a> &nbsp;<br>
+												<br>
+												<span style="font-weight: 200;">Copyright © 2018, City National Rochdale. All rights reserved.<br>
+												<a style="color:rgb(167,175,179); text-decoration: none;">400 Park Avenue, New York, NY 10022</a></span> </span></td>
+											</tr>
+											<tr>
+												<td height="40">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+									<td style="width:10px" width="10">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
